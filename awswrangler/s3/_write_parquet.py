@@ -11,7 +11,6 @@ import pandas as pd
 import pyarrow as pa
 import pyarrow.lib
 import pyarrow.parquet
-import pyarrow import orc
 from awswrangler import _data_types, _utils, catalog, exceptions, lakeformation, typing
 from awswrangler._arrow import _df_to_table
 from awswrangler._config import apply_configs
