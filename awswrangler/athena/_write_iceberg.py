@@ -172,7 +172,7 @@ def to_iceberg(
             )
 
         # Create temporary external table, write the results
-        s3.to_ORC(
+        s3.to_orc(
             df=df,
             path=temp_path or wg_config.s3_output,
             dataset=True,
