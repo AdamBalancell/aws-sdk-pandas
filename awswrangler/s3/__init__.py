@@ -14,7 +14,7 @@ from awswrangler.s3._upload import upload  # noqa
 from awswrangler.s3._wait import wait_objects_exist, wait_objects_not_exist  # noqa
 from awswrangler.s3._write_deltalake import to_deltalake  # noqa
 from awswrangler.s3._write_excel import to_excel  # noqa
-from awswrangler.s3._write_parquet import store_parquet_metadata, to_parquet  # noqa
+from awswrangler.s3._write_parquet import store_parquet_metadata, to_parquet, to_orc  # noqa
 from awswrangler.s3._write_text import to_csv, to_json  # noqa
 
 __all__ = [
