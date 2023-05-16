@@ -40,7 +40,7 @@ def _create_iceberg_table(
 
     create_sql: str = (
         f"CREATE TABLE IF NOT EXISTS {table} ({cols_str}) "
-        f"PARITIONED BY (month(timestamp))"
+        f"PARTITIONED BY (month(timestamp))"
         f"LOCATION '{path}' "
         f"TBLPROPERTIES ( 'table_type' ='ICEBERG', 'format'='ORC' )"
     )
